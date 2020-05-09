@@ -1,7 +1,9 @@
 ---
 # layout: default
-title: Home
+title: About
 ---
-# About page
+# {{ page.title }} page
 
+{{#test-class}}
 This page tells you a little bit about me.
+{{/test-class}}
