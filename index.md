@@ -2,5 +2,7 @@
 
 ## Utilize Python-Markdown ## {: .subsection}
 
-!!! Note
+!!! row
 	Invoke from the python interpreter.
+	
+	!!! column-half
