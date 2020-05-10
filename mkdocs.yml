@@ -2,3 +2,6 @@ site_name: Git for Windows Tutorial
 theme: 
   name: null
   custom_dir: 'custom-theme/'
+markdown_extensions:
+  - admonition
+  - attr_list
