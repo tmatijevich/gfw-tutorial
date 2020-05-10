@@ -1,4 +1,9 @@
-# Welcome to MkDocs
+---
+template: "main.html"
+title: Introduction
+---
+
+# Introduction
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Tyler Matijevich">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+  </head>
+  <body>
+    
+    <!-- 
+    header 
+    -->
+    
+    
+    <!-- 
+    main body 
+    -->
+    <div class="main-body">
+      <!-- 
+      navigation
+      -->
+      <div class="left-navigation">
+        
+      </div>
+      
+      <!-- 
+        main content 
+      -->
+      <div class="main-content">
+        {% block content %} {{ page.content }} {% endblock %}
+      </div>
+    </div> 
+    
+    
+    <!-- 
+    footer 
+    -->
+    
+  </body>
+</html>
