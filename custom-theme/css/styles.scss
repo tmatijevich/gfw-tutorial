@@ -1,0 +1,49 @@
+/*
+Notes:
+  * Do not add spaces between property values and units (20px not 20 px)
+  * Box model
+    * Content > Padding > Border > Margin
+  * Sizing
+    * [all]
+    * [top/bottom] [left/right]
+    * [top] [right] [bottom] [left]
+  * Margins can overlap with other sections (especially floating sections > consider position: relative)
+  * There are inline elements and block-level elements
+    * Block-level elements start on new line and take up full width available
+    * Inline elements are the opposite
+*/
+/*
+Template:
+  1. Font, formatting
+  2. Colors
+  3. Position, display
+  4. Padding
+  5. Border
+  6. Margin
+*/
+
+/*******************************************************************************
+Body
+*******************************************************************************/
+/*
+  The body has an 8px margin by default (html has no margin)
+*/
+body {
+  /* Specify several font names as a "fallback" system */
+  font-family: helvetica, verdana, sans-serif;
+  margin: 0px;
+}
+
+/*******************************************************************************
+Header
+*******************************************************************************/
+$grey1: rgb(238,238,238);
+$grey2: rgb(245,245,245);
+
+#hdr {
+  /* Same as website */
+  background-color: $grey2;
+  /* As soon as you add padding to the div, the div encapsulates the whole 21.440 margin */
+  padding: 10px 0px 5px;
+  border-bottom: 5px solid $grey1;
+}

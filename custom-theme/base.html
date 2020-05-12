@@ -4,15 +4,20 @@
     <meta charset="utf-8">
     <meta name="author" content="Tyler Matijevich">
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+    <link rel="stylesheet" href="{{ "css/styles.scss"|url }}">
   </head>
   <body>
     
     <!-- 
     header 
     -->
-    <div class="header">
+    <div id="header">
       <p style="font-size:12px; font-weight:bold; color:rgb(138,138,138);">{% if page.title=="Introduction" %}Home{% else %}Home > {{page.title}}{% endif %}</p>
-      {% if page.title=="Introduction" %}<a href="#">Git for Windows Tutorial</a>{% else %}<a href="{{page.url}}"></a>{% endif %}
+      {%- if page.title=="Introduction" %}
+      <a href="#">Git for Windows Tutorial</a>
+      {%- else %}
+      <a href="{{page.url}}">Git for Windows Tutorial</a>
+      {%- endif %}
     </div>
     
     <!-- 
