@@ -1,0 +1,35 @@
+/*******************************************************************************
+Content | Common styles
+*******************************************************************************/
+/*
+  h1 has a top/bottom margin of 21.440px by default
+*/
+h1, h2, h3 {
+  /* BR orange */
+  color: rgb(255,136,0);
+}
+h1 {
+  border-bottom-style: solid;
+  border-width: 2px;
+  border-color: rgb(255,136,0);
+}
+h2 {
+  margin-top: 40px;
+}
+#main-content p, #main-content li {
+  line-height: 1.35;
+}
+.top-level-list > li {
+  font-size: 18px;
+  margin-top: 10px;
+}
+#main-content a {
+  text-decoration: none;
+  color: rgb(78,130,157);
+}
+#main-content a:hover {
+  text-decoration: underline;
+}
+ul, ol {
+  margin-bottom: 10px;
+}

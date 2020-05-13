@@ -1,0 +1,108 @@
+/*
+Notes:
+  * Do not add spaces between property values and units (20px not 20 px)
+  * Box model
+    * Content > Padding > Border > Margin
+  * Sizing
+    * [all]
+    * [top/bottom] [left/right]
+    * [top] [right] [bottom] [left]
+  * Margins can overlap with other sections (especially floating sections > consider position: relative)
+  * There are inline elements and block-level elements
+    * Block-level elements start on new line and take up full width available
+    * Inline elements are the opposite
+*/
+/*
+Template:
+  1. Font, formatting
+  2. Colors
+  3. Position, display
+  4. Padding
+  5. Border
+  6. Margin
+*/
+
+/*******************************************************************************
+Body
+*******************************************************************************/
+/*
+  The body has an 8px margin by default (html has no margin)
+*/
+body {
+  /* Specify several font names as a "fallback" system */
+  font-family: helvetica, verdana, sans-serif;
+  margin: 0px;
+}
+
+
+/*******************************************************************************
+Header
+*******************************************************************************/
+#header {
+  /* Same as website */
+  background-color: rgb(245,245,245);
+  /* As soon as you add padding to the div, the div encapsulates the whole 21.440 margin */
+  padding: 10px 0px 5px;
+  border-bottom: 5px solid rgb(238,238,238);
+}
+#header a, #header p {
+  color: Black;
+  max-width: 1100px;
+  padding: 0px 10px;
+  /* Only setting right and left margin will leave top and bottom default */
+  margin-right: auto;
+  margin-left: auto;
+}
+#header a {
+  font-size: 36px;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+
+/*******************************************************************************
+Navigation (left)
+*******************************************************************************/
+#left-navigation {
+  float: left;
+  width: 175px;
+  top: 10px;
+  position: sticky;
+  /* This leaves a gap on top of the navigation */
+  margin: 10px 0px;
+}
+#left-navigation a {
+  font-size: 18px;
+  font-weight: bold;
+  color: Black;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+#left-navigation a:hover {
+  color: White;
+  background-color: rgb(78,130,157);
+}
+#left-navigation a.subsec {
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+
+/*******************************************************************************
+Content
+*******************************************************************************/
+#main-body {
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#main-body #main-content {
+  /* border-left: 1px solid Black; */
+  padding: 15px;
+  margin-left: 200px;
+  margin-bottom: 100px;
+}

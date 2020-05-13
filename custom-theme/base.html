@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <meta name="author" content="Tyler Matijevich">
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
-    <link rel="stylesheet" href="{{ "css/styles.scss"|url }}">
+    <link rel="stylesheet" href="{{ 'css/base.css'|url }}">
+    {%- for path in config.extra_css %}
+    <link rel="stylesheet" href="{{ path|url }}">
+    {%- endfor %}
   </head>
   <body>
     
@@ -12,29 +15,31 @@
     header 
     -->
     <div id="header">
-      <p style="font-size:12px; font-weight:bold; color:rgb(138,138,138);">{% if page.title=="Introduction" %}Home{% else %}Home > {{page.title}}{% endif %}</p>
+      <p style="font-size:12px; font-weight:bold; color:rgb(138,138,138);">{% if page.title=="Introduction" %}Home{% else %}Home ► {{ page.title }}{% endif %}</p>
       {%- if page.title=="Introduction" %}
       <a href="#">Git for Windows Tutorial</a>
       {%- else %}
-      <a href="{{page.url}}">Git for Windows Tutorial</a>
+      <a href="{{ site_url }}">Git for Windows Tutorial</a>
       {%- endif %}
     </div>
     
     <!-- 
     main body 
     -->
-    <div class="main-body">
+    <div id="main-body">
       <!-- 
       navigation
       -->
-      <div class="left-navigation">
-        
+      <div id="left-navigation">
+        {%- for nav_item in nav %}
+        <a href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
+        {%- endfor %}
       </div>
       
       <!-- 
         main content 
       -->
-      <div class="main-content">
+      <div id="main-content">
         {% block content %} {{ page.content }} {% endblock %}
       </div>
     </div> 

@@ -1,5 +1,5 @@
 ---
-layout: "main.html"
+template: "main.html"
 title: Background
 ---
 
