@@ -3,11 +3,11 @@ theme:
   name: null
   custom_dir: 'custom-theme/'
 nav:
-  - 'index.md'
   - 'background.md'
   - 'installation.md'
 extra_css:
   - 'css/main.css'
+  - 'css/layout.css'
 markdown_extensions:
   - admonition
   - attr_list
