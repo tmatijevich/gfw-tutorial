@@ -1,0 +1,52 @@
+// Executes once the DOM is loaded but before the images and styles are loaded
+document.addEventListener("DOMContentLoaded", function(){
+  fnCollapsibleClassListeners();
+});
+
+// Create collapsible sections (h4)
+function fnCollapsibleClassListeners() {
+  const collapsibleHeaders = document.getElementsByClassName("collapsible");
+  for (let collapsibleHeader of collapsibleHeaders){
+    if (collapsibleHeader.tagName == "H4"){
+      let indicator = document.createElement("div");
+      indicator.innerHTML = "⯈"; // ⯈ ⯆
+      indicator.style.color = "rgb(200,200,200)";
+      indicator.style.float = "left";
+      indicator.style.position = "relative";
+      indicator.style.top = "3px";
+
+      // function collapseToggle() {
+      const collapseToggle = () => {
+        let collapsibleContents = collapsibleHeader.nextElementSibling;
+        if (collapsibleContents == undefined) {console.log("The element " +  collapsibleHeader.tagName + 
+          " (" + collapsibleHeader.innerHTML + " ...)" + " has no sibling elements to follow");}
+        else {
+          if (collapsibleContents.style.display === "none"){ // check for equality in both type and value
+            collapsibleContents.style.display = "block";
+            indicator.innerHTML = "⯆";
+          } else {
+            collapsibleContents.style.display = "none";
+            indicator.innerHTML = "⯈";
+          }
+        }
+      }
+
+      // Initial display
+      if (collapsibleHeader.nextElementSibling != undefined){
+        // Ensure that the floating relative position for the indicator stays put
+        collapsibleHeader.nextElementSibling.style.marginBottom = "30px";
+        if (collapsibleHeader.getAttribute("data-show") == 1){
+          indicator.innerHTML = "⯆";
+        } else {
+          collapsibleHeader.nextElementSibling.style.display = "none";
+        }
+      }
+
+      // Add listener for clicks
+      collapsibleHeader.addEventListener("click", collapseToggle);
+
+      // Add the indicator to the document as the final step
+      collapsibleHeader.parentElement.insertBefore(indicator,collapsibleHeader);
+    }
+  }
+}
