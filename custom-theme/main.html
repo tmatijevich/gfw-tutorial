@@ -1,5 +1,20 @@
 {% extends "base.html" %}
 
+{% block navigation -%}
+{%- for nav_item in nav %}
+{%- if nav_item.url==page.url %}
+<a href="#" onclick="ToggleSubsections('cur-section')">{{ nav_item.title }}</a>
+<div id="cur-section" style="display:block">
+{%- for sub_item in page.meta.subsections %}
+<a class="subsec" href="#{{ sub_item[0] }}">{{ sub_item[1] }}</a>
+{%- endfor %}
+</div>
+{%- else %}
+<a href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
+{%- endif %}
+{%- endfor %}
+{%- endblock %}
+
 {% block content -%}
 <!-- <h1>{{ page.title }}</h1> -->
 {{ page.content }}

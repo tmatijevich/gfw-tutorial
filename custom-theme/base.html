@@ -32,16 +32,14 @@
       navigation
       -->
       <div id="left-navigation">
-        {%- for nav_item in nav %}
-        <a href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
-        {%- endfor %}
+        {%- block navigation %} {% endblock %}
       </div>
       
       <!-- 
         main content 
       -->
       <div id="main-content">
-        {% block content %} {{ page.content }} {% endblock %}
+        {% block content %} {% endblock %}
       </div>
     </div> 
     

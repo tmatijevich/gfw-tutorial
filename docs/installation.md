@@ -1,6 +1,9 @@
 ---
-template: "main.html"
+template: main.html
 title: Installation
+subsections:
+  - [overview, Overview]
+  - [install-notepad, Install Notepad++]
 ---
 
 # Overview
@@ -12,7 +15,7 @@ As the **bare minimum**, you will need Git. An installer is available on Git's o
 - [git-scm.com/downloads](https://git-scm.com/downloads)
 	- The web page should automatically recognize you are using Windows, so simply click the link *Download <version> for Windows* to get the latest stable version.
 - The Git for Windows installation provides:
-	- Use of the `git` command from the Windows Command Prompt
+	- Use of the `git`{: .code-snippet } command from the Windows Command Prompt
 	- Git-Bash - A shell terminal on Windows
 	- Git-GUI - A simple GUI for repositories
 	- OpenSSH - Secure Shell Protocol utility

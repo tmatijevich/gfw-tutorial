@@ -3,6 +3,19 @@ document.addEventListener("DOMContentLoaded", function(){
   fnCollapsibleClassListeners();
 });
 
+function ToggleSubsections(inputId) {
+  var currentStyle = document.getElementById(inputId).style.display;
+  // Getting the attribute in javascript only get the inline stype, not the class style
+  // So this will be 'none' on the first try
+  switch(currentStyle.trim().toLowerCase()){
+    case 'block': // And if the page is currently the main section of the inputId, or get current file path
+      document.getElementById(inputId).style.display = "none";
+      break;
+    default:
+      document.getElementById(inputId).style.display = "block";
+  }
+}
+
 // Create collapsible sections (h4)
 function fnCollapsibleClassListeners() {
   const collapsibleHeaders = document.getElementsByClassName("collapsible");

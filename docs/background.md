@@ -1,6 +1,9 @@
 ---
 template: "main.html"
 title: Background
+subsections:
+  - [what-is-git, What is Git]
+  - [git-mechanisms, Git Mechanisms]
 ---
 
 # What is Git?
