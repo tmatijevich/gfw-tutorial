@@ -108,8 +108,8 @@ Version Control is a file tracking system with the following functionality.
 Generation 		| Network 		| Content Operations 	| Synchronization 		| Example Software
 ----------------|---------------|-----------------------|-----------------------|--------------------
 First 			| None 			| Single file 			| Locks 				| RCS, SCCS
-Second 			| Centralized 	| File trees 			| Merge before commit 	| CVS, SVN, Visual SourceSafe, TFS
-Third 			| Distributed 	| Changesets 			| Merge & commit 		| Git, Mercurial, BitKeeper, Bazaar
+Second 			| Centralized 	| File trees 			| Update before commit 	| CVS, SVN, Visual SourceSafe, TFS
+Third 			| Distributed 	| Changesets 			| Commit before merge	| Git, Mercurial, BitKeeper, Bazaar
 
 *See Eric Sink's* [*History of Version Control*](https://ericsink.com/vcbe/html/history_of_version_control.html){: .external-link }.
 
@@ -121,10 +121,12 @@ Third 			| Distributed 	| Changesets 			| Merge & commit 		| Git, Mercurial, Bit
 * Repository
 	* Snapshots of a file system over time
 * File tree
+	- Store complete files from each snapshot
 
 ![File tree diagram](media/diagrams/File-Tree-example_2020-02-22_17-49-38.png){: style="margin-left:25px; width:100%" }
 
 * Changeset
+	- Store files changes between each snapshot
 
 ![Changeset diagram](media/diagrams/Changeset-example_2020-02-22_17-50-47.png){: style="margin-left:25px; width:100%" }
 
