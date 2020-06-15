@@ -4,6 +4,7 @@ title: Installation
 subsections:
   - [overview, Overview]
   - [install-notepad, Install Notepad++]
+  - [install-putty, Install PuTTY]
 ---
 
 # Overview
@@ -61,17 +62,17 @@ Run the installer and accept User Account Control.
 
 #### 2. License Agreement {: .collapsible }
 
-![npp 1](media/install/npp/2 license 2020-02-12_8-28-12.png){: style="width:497px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+![npp 2](media/install/npp/2 license 2020-02-12_8-28-12.png){: style="width:497px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
 
 #### 3. Install Location {: .collapsible }
 
-![npp 1](media/install/npp/3 destination 2020-02-12_8-28-15.png){: style="width:497px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+![npp 3](media/install/npp/3 destination 2020-02-12_8-28-15.png){: style="width:497px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
 
 #### 4. Components {: .collapsible data-show="1" }
 
 !!! Step ""
 	
-	![npp 1](media/install/npp/4 components scroll 2020-03-10_11-34-42.png){: style="width:497px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+	![npp 4](media/install/npp/4 components scroll 2020-03-10_11-34-42.png){: style="width:497px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
 	
 	- The default component selections are sufficient
 	- Make sure *Context Menu Entry* is selected (default)
@@ -79,8 +80,42 @@ Run the installer and accept User Account Control.
 
 #### 5. Options {: .collapsible }
 
-![npp 1](media/install/npp/5 desktop shortcut 2020-02-12_8-29-07.png){: style="width:497px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+![npp 5](media/install/npp/5 desktop shortcut 2020-02-12_8-29-07.png){: style="width:497px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
 
 #### 6. Finish {: .collapsible }
 
-![npp 1](media/install/npp/6 completing 2020-02-12_8-29-33.png){: style="width:497px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+![npp 6](media/install/npp/6 completing 2020-02-12_8-29-33.png){: style="width:497px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+
+# Install PuTTY
+
+[PuTTY](https://putty.org/) is a client program for the SSH (Secure Shell) protocol. It will be used to communicate file changes to repositories on a server. It is free, open source, and available to download for Windows and Unix systems at the [author's website](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) or [ssh.com](https://www.ssh.com/ssh/putty/download).
+
+The PuTTY installation will be referenced during the Git installation process.
+
+Download the 32 or 64 bit installer, then run the installer with the default options.
+
+#### 1. Welcome {: .collapsible }
+
+![putty 1](media/install/putty/1 setup 2020-02-10_16-07-36.png){: style="width:492px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+
+#### 2. Destination Folder {: .collapsible }
+
+![putty 2](media/install/putty/2 destination 2020-02-10_16-07-42.png){: style="width:492px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+
+#### 3. Feature Options {: .collapsible data-show="1" }
+
+!!! Step ""
+	
+	![putty 3](media/install/putty/3 options 2020-02-10_16-08-15.png){: style="width:492px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+	
+	- Keep *Put install directory on the PATH ...* selected (default)
+		- This will add `C:\Program Files\PuTTY`{: .code-snippet } to your Windows PATH allowing other programs to find it
+		- Use this command to view all current directories in your PATH with CMD (Credit Groosha at [Stack Overflow](https://stackoverflow.com/a/15885269/11402416))
+	
+	\> echo %path:;=&echo.%
+	{: .code-block style="margin-left:80px" }
+	
+#### 4. Complete {: .collapsible }
+
+![putty 4](media/install/putty/4 complete 2020-02-10_16-08-23.png){: style="width:492px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+
