@@ -5,6 +5,7 @@ subsections:
   - [overview, Overview]
   - [install-notepad, Install Notepad++]
   - [install-putty, Install PuTTY]
+  - [install-git, Install Git]
 ---
 
 # Overview
@@ -110,7 +111,7 @@ Download the 32 or 64 bit installer, then run the installer with the default opt
 	
 	- Keep *Put install directory on the PATH ...* selected (default)
 		- This will add `C:\Program Files\PuTTY`{: .code-snippet } to your Windows PATH allowing other programs to find it
-		- Use this command to view all current directories in your PATH with CMD (Credit Groosha at [Stack Overflow](https://stackoverflow.com/a/15885269/11402416))
+		- Use this command to view all current directories in your PATH with cmd (Credit Groosha at [Stack Overflow](https://stackoverflow.com/a/15885269/11402416))
 	
 	\> echo %path:;=&echo.%
 	{: .code-block style="margin-left:80px" }
@@ -119,3 +120,132 @@ Download the 32 or 64 bit installer, then run the installer with the default opt
 
 ![putty 4](media/install/putty/4 complete 2020-02-10_16-08-23.png){: style="width:492px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
 
+# Install Git
+
+With Notepad++ and PuTTY installed, it is now a good time to install Git. If installed out of order, that is fine, you can still make changes to Git's configuration after installation.
+
+### Installation Options
+
+The default Git installation options will work fine on Windows, but there are a few recommended alternative options that align with the remaining material in the tutorial. These alternative options can also be implemented after installation.
+
+### Already Installed?
+
+If you already have Git installed, you can still run the latest installer. This will effectively update your current installation of Git. The installation options will populate based on your current Git configuration and you can modify them during the *update* installation.
+
+### Download and Install
+
+Download the 32 or 64 bit version of Git from the official website [git-scm.com](https://git-scm.com/download/win) and run the installer.
+
+Steps marked *Configurable*{: style="color:rgb(255,136,0)" } can be configured post-installation.
+
+#### 1. Information {: .collapsible }
+
+!!! Step ""
+	
+	![git 1](media/install/git/1 info 2020-02-10_16-13-37.png){: style="width:463px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+
+#### 2. Destination Location {: .collapsible }
+
+!!! Step ""
+	
+	![git 2](media/install/git/2 destination 2020-02-10_16-13-43.png){: style="width:463px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+
+#### 3. Select Components {: .collapsible data-show="1" }
+
+!!! Step ""
+	
+	![git 3](media/install/git/3 components 2020-02-10_16-13-50.png){: style="width:463px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+	
+	- The default component selections (shown) are sufficient
+	- It is recommended to keep the **Git Bash Here** Windows Explorer integration checked for quick access to bash commands
+
+#### 4. Start Menu {: .collapsible }
+
+!!! Step ""
+	
+	![git 4](media/install/git/4 start menu 2020-02-10_16-14-00.png){: style="width:463px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+
+#### 5. Text Editor *Configurable*{: style="color:rgb(255,136,0)" } {: .collapsible }
+
+!!! Step ""
+	
+	![git 5](media/install/git/default editor 2019-11-11_10-52-51.png){: style="width:463px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+	
+	- The default selection is Vim only for historical reasons
+	- It is recommended to use the already installed and user-friendly **Notepad++** text editor
+	- This default editor is launched when running `git commit`{: .code-snippet } without a message argument, prompting for a message
+
+#### 6. PATH Environment {: .collapsible }
+
+!!! Step ""
+	
+	![git 6](media/install/git/6 path 2020-02-10_16-14-24.png){: style="width:463px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+	
+	- The default recommended selection is the best option
+	- This option only adds the necessary entries to PATH allowing Git commands from:
+		- Windows Command Prompt (cmd)
+		- Windows Powershell
+		- Git Bash
+	- Unix commands will only be available from Git Bash with this option
+	
+#### 7. SSH Agent *Configurable*{: style="color:rgb(255,136,0)" } {: .collapsible data-show="1" }
+
+!!! Step ""
+	
+	![git 7](media/install/git/7 ssh setup 2020-02-10_16-15-36.png){: style="width:463px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+	
+	- Git ships with OpenSSH (default) as the Secure Shell (SSH) protocol client.
+		- However, all of OpenSSH's tools are command line execution only. This can be difficult for new users.
+	- [PuTTY](#install-putty) has a suite of user-friendly graphical interface applications to perform SSH client operations.
+	- This step of the installation is looking for the executable of a remote connection tool.
+		- Plink (PuTTY Link) can be found from any of the following installations:
+			- `C:\Program Files\PuTTY\Plink.exe`{: .code-snippet } - Already installed [above](#install-putty)
+			- `C:\Program Files\TortoiseGit\bin\TortoiseGitPlink.exe`{: .code-snippet }
+			- `C:\Program Files\TortoiseSVN\bin\TortoisePlink.exe`{: .code-snippet }
+	
+#### 8. SSL Backend *Configurable*{: style="color:rgb(255,136,0)" } {: .collapsible }
+
+!!! Step ""
+	
+	![git 8](media/install/git/8 ssl 2020-02-10_16-15-40.png){: style="width:463px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+	
+	- The default selection is suitable for most cases, *especially when using SSH to connect with remote servers instead of HTTPS*.
+	
+#### 9. File Checkout *Configurable*{: style="color:rgb(255,136,0)" } {: .collapsible }
+
+!!! Step ""
+	
+	![git 9](media/install/git/9 checkout 2020-02-10_16-15-48.png){: style="width:463px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+	
+	- On checkout, Git will convert unix-style line endings (line feed LF) to windows-style line endings (carriage return CR line feed LF) for text-based files.
+	- During a commit, the inverse is performed.
+	- This is the recommended option for Windows compatibility.
+	
+#### 10. Terminal {: .collapsible }
+
+!!! Step ""
+	
+	![git 10](media/install/git/10 terminal 2020-02-10_16-15-53.png){: style="width:463px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+	
+	- To avoid complications (ASC-II, scroll-back) with the Windows Command Prompt, it is recommended to use MinTTY (default) as the terminal emulator for Git Bash.
+	
+#### 11. Extra Options *Configurable*{: style="color:rgb(255,136,0)" } {: .collapsible data-show="1" }
+
+!!! Step ""
+	
+	![git 11](media/install/git/11 extra options 2020-02-10_16-15-58.png){: style="width:463px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+	
+	- Each option can be enabled or disabled post-installation.
+	- The Git Credential Manager (stores HTTPS connection usernames and passwords) is unnecessary when utilizing SSH for remote connections.
+	
+#### 12. Complete {: .collapsible }
+
+!!! Step ""
+	
+	![git 12](media/install/git/12 installing 2020-02-10_16-16-07.png){: style="width:463px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+	
+	![git 12b](media/install/git/12 complete 2020-02-10_16-16-52.png){: style="width:463px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+	
+	Git has now successfully been installed on your computer.
+
+	
