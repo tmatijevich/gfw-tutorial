@@ -14,7 +14,7 @@ This section provides installation details on the recommended software to start 
 
 As the **bare minimum**, you will need Git. An installer is available on Git's official website.
 
-- [git-scm.com/downloads](https://git-scm.com/downloads)
+- [git-scm.com/downloads](https://git-scm.com/downloads){: .external-link }
 	- The web page should automatically recognize you are using Windows, so simply click the link *Download <version> for Windows* to get the latest stable version.
 - The Git for Windows installation provides:
 	- Use of the `git`{: .code-snippet } command from the Windows Command Prompt
@@ -28,24 +28,24 @@ As the **bare minimum**, you will need Git. An installer is available on Git's o
 It is **recommended** to additionally download the follow **free** software to use with Git for Windows.
 
 - A text editor
-	- [Notepad++](https://notepad-plus-plus.org/)
-	- [Atom](https://atom.io/) - Also has a Git client integration
-	- [Sublime Text](https://www.sublimetext.com/)
-	- [Microsoft VSCode](https://code.visualstudio.com/)
+	- [Notepad++](https://notepad-plus-plus.org/){: .external-link }
+	- [Atom](https://atom.io/){: .external-link } - Also has a Git client integration
+	- [Sublime Text](https://www.sublimetext.com/){: .external-link }
+	- [Microsoft VSCode](https://code.visualstudio.com/){: .external-link }
 - A SSH Client
-	- [PuTTY](https://putty.org/) - A user friendly SSH client for Windows
+	- [PuTTY](https://putty.org/){: .external-link } - A user friendly SSH client for Windows
 - A Git GUI client
-	- [TortoiseGit](https://tortoisegit.org/download/)
-	- [Sourcetree](https://www.sourcetreeapp.com/)
-	- [GitHub Desktop](https://desktop.github.com/)
-	- [Sublime Merge](https://www.sublimemerge.com/)
-	- [GitKraken](https://www.gitkraken.com/)
+	- [TortoiseGit](https://tortoisegit.org/download/){: .external-link }
+	- [Sourcetree](https://www.sourcetreeapp.com/){: .external-link }
+	- [GitHub Desktop](https://desktop.github.com/){: .external-link }
+	- [Sublime Merge](https://www.sublimemerge.com/){: .external-link }
+	- [GitKraken](https://www.gitkraken.com/){: .external-link }
 
 # Install Notepad++
 
 ![npp logo](media/screenshots/download latest notepad++ 2020-03-10_11-16-51.png){: style="width:222px; float:right;" }
 
-Notepad++ is a fast and lightweight text editor for Windows, useful for editing source code and configuration files. It is free to download from the official website [https://notepad-plus-plus.org/](https://notepad-plus-plus.org/). Find the latest version (32 or 64 bit) and download the installer.
+Notepad++ is a fast and lightweight text editor for Windows, useful for editing source code and configuration files. It is free to download from the official website [https://notepad-plus-plus.org/](https://notepad-plus-plus.org/){: .external-link }. Find the latest version (32 or 64 bit) and download the installer.
 
 Installing Notepad++ before Git will allow you to reference the existing Notepad++ installation during the Git installation.
 
@@ -89,7 +89,7 @@ Run the installer and accept User Account Control.
 
 # Install PuTTY
 
-[PuTTY](https://putty.org/) is a client program for the SSH (Secure Shell) protocol. It will be used to communicate file changes to repositories on a server. It is free, open source, and available to download for Windows and Unix systems at the [author's website](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) or [ssh.com](https://www.ssh.com/ssh/putty/download).
+[PuTTY](https://putty.org/) is a client program for the SSH (Secure Shell) protocol. It will be used to communicate file changes to repositories on a server. It is free, open source, and available to download for Windows and Unix systems at the [author's website](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html){: .external-link } or [ssh.com](https://www.ssh.com/ssh/putty/download){: .external-link }.
 
 The PuTTY installation will be referenced during the Git installation process.
 
@@ -111,7 +111,7 @@ Download the 32 or 64 bit installer, then run the installer with the default opt
 	
 	- Keep *Put install directory on the PATH ...* selected (default)
 		- This will add `C:\Program Files\PuTTY`{: .code-snippet } to your Windows PATH allowing other programs to find it
-		- Use this command to view all current directories in your PATH with cmd (Credit Groosha at [Stack Overflow](https://stackoverflow.com/a/15885269/11402416))
+		- Use this command to view all current directories in your PATH with cmd (Credit Groosha at [Stack Overflow](https://stackoverflow.com/a/15885269/11402416){: .external-link })
 	
 	\> echo %path:;=&echo.%
 	{: .code-block style="margin-left:80px" }
@@ -134,7 +134,7 @@ If you already have Git installed, you can still run the latest installer. This 
 
 ### Download and Install
 
-Download the 32 or 64 bit version of Git from the official website [git-scm.com](https://git-scm.com/download/win) and run the installer.
+Download the 32 or 64 bit version of Git from the official website [git-scm.com](https://git-scm.com/download/win){: .external-link } and run the installer.
 
 Steps marked *Configurable*{: style="color:rgb(255,136,0)" } can be configured post-installation.
 
@@ -248,4 +248,5 @@ Steps marked *Configurable*{: style="color:rgb(255,136,0)" } can be configured p
 	
 	Git has now successfully been installed on your computer.
 
-	
+# Install TortoiseGit
+

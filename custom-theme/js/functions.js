@@ -1,6 +1,7 @@
 // Executes once the DOM is loaded but before the images and styles are loaded
 document.addEventListener("DOMContentLoaded", function(){
   fnCollapsibleClassListeners();
+  SetExternalLinks();
 });
 
 function ToggleSubsections(inputId) {
@@ -13,6 +14,16 @@ function ToggleSubsections(inputId) {
       break;
     default:
       document.getElementById(inputId).style.display = "block";
+  }
+}
+
+function SetExternalLinks() {
+  var elems = document.getElementsByClassName("external-link");
+  for(let elem of elems){
+    if(elem.tagName.toLowerCase() == "a"){
+      console.log(elem.getAttribute("href"));
+      elem.setAttribute("target", "_blank")
+    }
   }
 }
 
