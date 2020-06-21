@@ -79,7 +79,7 @@ Version Control is a file tracking system with the following functionality.
 		
 		* Git
 			* Available 3-letter word amongst Unix commands
-			* Global Information Tracker
+			* Global Information Tracker (not really)
 		* VCS
 			* <b>V</b>ersion <b>C</b>ontrol <b>S</b>ystem
 			* DVCS - Distributed Version Control System

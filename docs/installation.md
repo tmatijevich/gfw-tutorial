@@ -6,6 +6,7 @@ subsections:
   - [install-notepad, Install Notepad++]
   - [install-putty, Install PuTTY]
   - [install-git, Install Git]
+  - [install-tortoisegit, Install TortoiseGit]
 ---
 
 # Overview
@@ -89,7 +90,7 @@ Run the installer and accept User Account Control.
 
 # Install PuTTY
 
-[PuTTY](https://putty.org/) is a client program for the SSH (Secure Shell) protocol. It will be used to communicate file changes to repositories on a server. It is free, open source, and available to download for Windows and Unix systems at the [author's website](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html){: .external-link } or [ssh.com](https://www.ssh.com/ssh/putty/download){: .external-link }.
+[PuTTY](https://putty.org/){: .external-link } is a client program for the SSH (Secure Shell) protocol. It will be used to communicate file changes to repositories on a server. It is free, open source, and available to download for Windows and Unix systems at the [author's website](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html){: .external-link } or [ssh.com](https://www.ssh.com/ssh/putty/download){: .external-link }.
 
 The PuTTY installation will be referenced during the Git installation process.
 
@@ -250,3 +251,94 @@ Steps marked *Configurable*{: style="color:rgb(255,136,0)" } can be configured p
 
 # Install TortoiseGit
 
+TortoiseGit is a free and open source Windows software to interface with Git.
+
+Specifically, TortoiseGit is a lightweight Windows Shell Interface to Git making it very easy to use with all commands directly available from the Windows Explorer.
+It is based on the TortoiseSVN interface for [Apache's Subversion](https://subversion.apache.org/){: .external-link } version control system.
+
+Additionally, TortoiseGit provides helpful tools for file comparison and merging.
+It works independently of all IDE (Integrated Development Environment) applications
+
+TortoiseGit is available for download on its [official website](https://tortoisegit.org/download/){: .external-link }
+Download and run the latest stable installer for your 32 or 64 bit system.
+
+#### 1. Welcome {: .collapsible }
+
+!!! Step ""
+	
+	![tg 1](media/install/tg/1 welcome 2020-02-10_16-25-10.png){: style="width:492px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+	
+#### 2. Information {: .collapsible }
+
+!!! Step ""
+	
+	![tg 2](media/install/tg/2 info 2020-02-10_16-25-16.png){: style="width:492px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+	
+#### 3. SSH Client {: .collapsible data-show="1" }
+
+!!! Step ""
+	
+	![tg 3](media/install/tg/3 ssh 2020-02-10_16-25-27.png){: style="width:492px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+	
+	- TortoiseGitPlink is TortoiseGit's adoption of [PuTTY](#install-putty){: .external-link }'s Plink.
+	- You may use `TortoiseGitPlink.exe`{: .code-snippet } or `Plink.exe`{: .code-snippet } for Git operations. However, PuTTY provides additional tools for SSH connections which prove useful for many scenarios.
+	
+#### 4. Custom Setup {: .collapsible }
+
+!!! Step ""
+	
+	![tg 4](media/install/tg/4 components 2020-02-10_16-25-31.png){: style="width:492px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+	
+	All subfeatures are selected by default and take up little space.
+	
+#### 5. Ready to Install {: .collapsible }
+
+!!! Step ""
+	
+	![tg 5](media/install/tg/5 ready 2020-02-10_16-25-35.png){: style="width:492px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+	
+#### 6. Complete {: .collapsible }
+
+!!! Step ""
+	
+	![tg 6](media/install/tg/6 complete 2020-02-10_16-26-27.png){: style="width:492px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+	
+Once installed, TortoiseGit prompts the user to run the First Start Wizard. This is highly recommended to complete the setup of TortoiseGit before usage.
+
+Steps marked *Configurable*{: style="color:rgb(255,136,0)" } can be configured post-installation.
+
+#### 1. Language {: .collapsible }
+
+!!! Step ""
+	
+	![tgf 1](media/install/tg/f1 language 2020-02-10_16-26-32.png){: style="width:470px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+	
+#### 2. Details {: .collapsible }
+
+!!! Step ""
+	
+	![tgf 2](media/install/tg/f2 welcome 2020-02-10_16-26-34.png){: style="width:470px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+	
+#### 3. Git Path {: .collapsible }
+
+!!! Step ""
+	
+	![tgf 3](media/install/tg/f3 git path 2020-02-10_16-26-41.png){: style="width:470px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+	
+#### 4. User Configuration *Configurable*{: style="color:rgb(255,136,0)" } {: .collapsible data-show="1" }
+
+!!! Step ""
+	
+	![tgf 4](media/install/tg/f4 user config 2020-02-10_16-26-47.png){: style="width:470px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+	
+	Git's user configuration will be setup in the next page so the reader can see how to set, modify, and unset the user name and email in the Git configuration.
+	
+#### 5. Authentication and Credential Store *Configurable*{: style="color:rgb(255,136,0)" } {: .collapsible data-show="1" }
+
+!!! Step ""
+	
+	![tgf 5](media/install/tg/f5 config options 2020-02-10_16-26-55.png){: style="width:492px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
+	
+	- Similar to the Git installation, the credential store is unnecessary since it is recommended to use SSH for all remote connections.
+	- Selecting a credential helper will not interfere with any SSH setup.
+	- The credential helper configuration can be change at any time.
