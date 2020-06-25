@@ -28,9 +28,12 @@ Body
 /*
   The body has an 8px margin by default (html has no margin)
 */
+@font-face { font-family: "Open Sans"; src: url("../font/OpenSans-Regular.ttf"); }
+@font-face { font-family: "Open Sans"; font-style: italic; src: url("../font/OpenSans-Italic.ttf"); }
+@font-face { font-family: "Open Sans"; font-weight: bold; src: url("../font/OpenSans-Bold.ttf"); }
 body {
   /* Specify several font names as a "fallback" system */
-  font-family: helvetica, verdana, sans-serif;
+  font-family: "Open Sans", serif; /* "Segoe UI" */
   margin: 0px;
 }
 
