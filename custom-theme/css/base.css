@@ -34,6 +34,7 @@ Body
 body {
   /* Specify several font names as a "fallback" system */
   font-family: "Open Sans", serif; /* "Segoe UI" */
+  /* background-color: rgb(245,245,245); */
   margin: 0px;
 }
 
@@ -60,6 +61,13 @@ Header
   font-weight: bold;
   text-decoration: none;
 }
+#footer {
+  /* This causes the div to uniquely include the margin(s) of the child element(s) - block does not do the trick */
+  display: table;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+}
 
 
 /*******************************************************************************
@@ -83,7 +91,7 @@ Navigation (left)
 }
 #left-navigation a:hover {
   color: White;
-  background-color: rgb(78,130,157);
+  background-color: rgb(70,62,222);
 }
 #left-navigation a.subsec {
   font-size: 14px;

@@ -2,6 +2,7 @@
 document.addEventListener("DOMContentLoaded", function(){
   fnCollapsibleClassListeners();
   SetExternalLinks();
+  SetFooter();
 });
 
 function ToggleSubsections(inputId) {
@@ -73,4 +74,17 @@ function fnCollapsibleClassListeners() {
       collapsibleHeader.parentElement.insertBefore(indicator,collapsibleHeader);
     }
   }
+}
+
+function SetFooter() {
+  var el = document.getElementById("span-test");
+  if(localStorage.getItem("hideFooter")){
+    el.innerHTML = localStorage.getItem("hideFooter");
+    console.log(localStorage.getItem("hideFooter"));
+  }
+}
+
+function HideFooter() {
+  localStorage.setItem("hideFooter", "1");
+  console.log("Hide the footer")
 }
