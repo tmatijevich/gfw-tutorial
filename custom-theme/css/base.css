@@ -46,10 +46,8 @@ Header
   background-color: rgb(245,245,245);
   /* As soon as you add padding to the div, the div encapsulates the whole 21.440 margin */
   padding: 10px 0px 5px;
-  border-bottom: 5px solid rgb(238,238,238);
 }
-#header a, #header p {
-  color: Black;
+#header-center {
   max-width: 1100px;
   padding: 0px 10px;
   /* Only setting right and left margin will leave top and bottom default */
@@ -57,12 +55,10 @@ Header
   margin-left: auto;
 }
 #header a {
+  color: Black;
   font-size: 36px;
   font-weight: bold;
   text-decoration: none;
-  display: block;
-  margin-top: 16px;
-  margin-bottom: 16px;
 }
 
 

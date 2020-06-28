@@ -26,7 +26,7 @@ Version Control is a file tracking system with the following functionality.
 	
 	!!! col-half ""
 		
-		![gfw full-size logo](media/images/gfw-logo.png){: style="margin-left:25px; width:275px;"}
+		![Gfw tutorial logo](media/images/InkGfwLogoBackViolet275px.png){: style="margin-left:25px; width:275;" }
 
 
 ## The History of Git
