@@ -77,14 +77,20 @@ function fnCollapsibleClassListeners() {
 }
 
 function SetFooter() {
-  var el = document.getElementById("span-test");
-  if(localStorage.getItem("hideFooter")){
-    el.innerHTML = localStorage.getItem("hideFooter");
-    console.log(localStorage.getItem("hideFooter"));
+  console.log(localStorage.getItem("hideFooter"));
+  if(localStorage.getItem("hideFooter") == 1 ){
+    var el = document.getElementById("footer");
+    el.style.position = "static";
+    el = document.getElementById("close-footer");
+    el.style.display = "none";
   }
 }
 
 function HideFooter() {
   localStorage.setItem("hideFooter", "1");
-  console.log("Hide the footer")
+  var el = document.getElementById("footer");
+  el.style.position = "static";
+  el = document.getElementById("close-footer");
+  el.style.display = "none";
+  console.log("Hide the footer");
 }

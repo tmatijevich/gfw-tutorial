@@ -1,6 +1,6 @@
 ---
 template: "main.html"
-title: Introduction
+title: Home
 ---
 
 # Introduction
@@ -17,4 +17,13 @@ By completing this tutorial, you should have a strong understanding of the funda
 	When using Git on Windows, the actual software is called *Git for Windows* ([forked from Git](https://github.com/git-for-windows/git){: .external-link } and maintained by the community & project lead).
 
 ## Table of Contents
-\#TODO
+
+- [Background](background)
+	- [What is Git?](background/#what-is-git)
+	- [Git Mechanisms](background/#git-mechanisms)
+- [Installation](installation)
+	- [Overview](installation/#overview)
+	- [Install Notepad++](installation/#install-notepad)
+	- [Install PuTTY](installation/#install-putty)
+	- [Install Git](installation/#install-git)
+	- [Install TortoiseGit](installation/#install-tortoisegit)
