@@ -37,11 +37,11 @@ Content | Collapsible Section
 *******************************************************************************/
 h4.collapsible {
   font-weight: normal;
-  background-color: rgb(245,245,245);
+  background-color: rgb(245,245,245); /* Gray 1 */
   cursor: pointer;
   user-select: none;
   padding: 5px;
-  border: 1px solid rgb(230,230,230);
+  border: 1px solid rgb(230,230,230); /* Gray 2 */
   border-radius: 3px;
   margin: 10px 0px 10px 20px;
 }
@@ -50,14 +50,4 @@ figcaption {
 }
 .step {
   margin-left: 20px;
-}
-
-
-/*******************************************************************************
-Header Label
-*******************************************************************************/
-span.header-label {
-  color: rgb(255,136,0);
-  font-style: italic;
-  margin-left: 5px;
 }

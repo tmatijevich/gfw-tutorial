@@ -5,27 +5,18 @@ Content | Common styles
   h1 has a top/bottom margin of 21.440px by default
 */
 h1 {
-  /* color: rgb(70,62,222); */
   border-bottom-style: solid;
   border-width: 1px;
-  /* border-color: rgb(70,62,222); */
-}
-h2 {
-  margin-top: 40px;
 }
 #main-content p, #main-content li {
-  line-height: 1.35;
+  line-height: 1.5;
 }
 #main-content a {
   text-decoration: none;
-  color: rgb(40,178,210);
+  color: rgb(40,178,210); /* Aqua */
 }
 #main-content a:hover {
   text-decoration: underline;
-}
-.top-level-list > li {
-  font-size: 18px;
-  margin-top: 10px;
 }
 ul, ol {
   margin-bottom: 10px;
@@ -38,9 +29,9 @@ Content | Note
 .note {
   font-style: italic;
   /* background-color: LightBlue; */
-  background-color: rgb(245,245,245);
-  border: 1px solid rgb(230,230,230);
-  border-left: 5px solid rgb(70,62,222);
+  background-color: rgb(245,245,245); /* Gray 1 */
+  border: 1px solid rgb(230,230,230); /* Gray 2 */
+  border-left: 5px solid rgba(90,80,255,0.9); /* Violet */
   border-radius: 5px;
   padding-left: 10px;
 }
@@ -57,17 +48,17 @@ table {
   width: 100%;
   box-sizing: border-box;
   border-spacing: 0px;
-  border: 1px solid rgb(230,230,230);
+  border: 1px solid rgb(230,230,230); /* Gray 2 */
   /* border-collapse: collapse; */
 }
 table th {
   color: White;
-  background-color: rgb(70,62,222);
+  background-color: rgba(90,80,255,0.9); /* Violet */
   text-align: left;
   padding: 15px 10px;
 }
 table tr:nth-child(odd) {
-  background-color: rgb(245,245,245);
+  background-color: rgb(245,245,245); /* Gray 1 */
 }
 table td {
   padding: 15px;
@@ -80,10 +71,10 @@ Content | Inline code
 .code-snippet {
   font-family: Consolas, courier, monospace;
   font-weight: bold;
-  color: rgb(70,62,222);
-  background-color: rgb(245,245,245);
+  color: rgba(90,80,255,0.9); /* Violet */
+  background-color: rgb(245,245,245); /* Gray 1 */
   /* rgb(217,227,229); */
-  border: 1px solid rgb(230,230,230);
+  border: 1px solid rgb(230,230,230); /* Gray 2 */
   border-radius: 3px;
   padding-left: 5px;
   padding-right: 5px;
@@ -95,9 +86,9 @@ Content | Code block
 *******************************************************************************/
 .code-block {
   font-family: Consolas, courier, monospace;
-  background-color: rgb(245,245,245);
+  background-color: rgb(245,245,245); /* Gray 1 */
   border-radius: 5px;
-  border: 1px solid rgb(230,230,230);
-  border-left: 5px solid rgb(70,62,222);
+  border: 1px solid rgb(230,230,230); /* Gray 2 */
+  border-left: 5px solid rgba(90,80,255,0.9); /* Violet */
   padding: 10px 15px;
 }

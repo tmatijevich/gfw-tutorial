@@ -137,7 +137,7 @@ If you already have Git installed, you can still run the latest installer. This 
 
 Download the 32 or 64 bit version of Git from the official website [git-scm.com](https://git-scm.com/download/win){: .external-link } and run the installer.
 
-Steps marked *Configurable*{: style="color:rgb(70,62,222)" } can be configured post-installation.
+Steps marked *Configurable*{: style="color:rgba(90,80,255,0.9);" } can be configured post-installation.
 
 #### 1. Information {: .collapsible }
 
@@ -166,7 +166,7 @@ Steps marked *Configurable*{: style="color:rgb(70,62,222)" } can be configured p
 	
 	![git 4](media/install/git/4 start menu 2020-02-10_16-14-00.png){: style="width:463px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
 
-#### 5. Text Editor *Configurable*{: style="color:rgb(70,62,222)" } {: .collapsible }
+#### 5. Text Editor *Configurable*{: style="color:rgba(90,80,255,0.9);" } {: .collapsible }
 
 !!! Step ""
 	
@@ -189,7 +189,7 @@ Steps marked *Configurable*{: style="color:rgb(70,62,222)" } can be configured p
 		- Git Bash
 	- Unix commands will only be available from Git Bash with this option
 	
-#### 7. SSH Agent *Configurable*{: style="color:rgb(70,62,222)" } {: .collapsible data-show="1" }
+#### 7. SSH Agent *Configurable*{: style="color:rgba(90,80,255,0.9);" } {: .collapsible data-show="1" }
 
 !!! Step ""
 	
@@ -204,7 +204,7 @@ Steps marked *Configurable*{: style="color:rgb(70,62,222)" } can be configured p
 			- `C:\Program Files\TortoiseGit\bin\TortoiseGitPlink.exe`{: .code-snippet }
 			- `C:\Program Files\TortoiseSVN\bin\TortoisePlink.exe`{: .code-snippet }
 	
-#### 8. SSL Backend *Configurable*{: style="color:rgb(70,62,222)" } {: .collapsible }
+#### 8. SSL Backend *Configurable*{: style="color:rgba(90,80,255,0.9);" } {: .collapsible }
 
 !!! Step ""
 	
@@ -212,7 +212,7 @@ Steps marked *Configurable*{: style="color:rgb(70,62,222)" } can be configured p
 	
 	- The default selection is suitable for most cases, *especially when using SSH to connect with remote servers instead of HTTPS*.
 	
-#### 9. File Checkout *Configurable*{: style="color:rgb(70,62,222)" } {: .collapsible }
+#### 9. File Checkout *Configurable*{: style="color:rgba(90,80,255,0.9);" } {: .collapsible }
 
 !!! Step ""
 	
@@ -230,7 +230,7 @@ Steps marked *Configurable*{: style="color:rgb(70,62,222)" } can be configured p
 	
 	- To avoid complications (ASC-II, scroll-back) with the Windows Command Prompt, it is recommended to use MinTTY (default) as the terminal emulator for Git Bash.
 	
-#### 11. Extra Options *Configurable*{: style="color:rgb(70,62,222)" } {: .collapsible data-show="1" }
+#### 11. Extra Options *Configurable*{: style="color:rgba(90,80,255,0.9);" } {: .collapsible data-show="1" }
 
 !!! Step ""
 	
@@ -305,7 +305,7 @@ Download and run the latest stable installer for your 32 or 64 bit system.
 	
 Once installed, TortoiseGit prompts the user to run the First Start Wizard. This is highly recommended to complete the setup of TortoiseGit before usage.
 
-Steps marked *Configurable*{: style="color:rgb(70,62,222)" } can be configured post-installation.
+Steps marked *Configurable*{: style="color:rgba(90,80,255,0.9);" } can be configured post-installation.
 
 #### 1. Language {: .collapsible }
 
@@ -325,7 +325,7 @@ Steps marked *Configurable*{: style="color:rgb(70,62,222)" } can be configured p
 	
 	![tgf 3](media/install/tg/f3 git path 2020-02-10_16-26-41.png){: style="width:470px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
 	
-#### 4. User Configuration *Configurable*{: style="color:rgb(70,62,222)" } {: .collapsible data-show="1" }
+#### 4. User Configuration *Configurable*{: style="color:rgba(90,80,255,0.9);" } {: .collapsible data-show="1" }
 
 !!! Step ""
 	
@@ -333,7 +333,7 @@ Steps marked *Configurable*{: style="color:rgb(70,62,222)" } can be configured p
 	
 	Git's user configuration will be setup in the next page so the reader can see how to set, modify, and unset the user name and email in the Git configuration.
 	
-#### 5. Authentication and Credential Store *Configurable*{: style="color:rgb(70,62,222)" } {: .collapsible data-show="1" }
+#### 5. Authentication and Credential Store *Configurable*{: style="color:rgba(90,80,255,0.9);" } {: .collapsible data-show="1" }
 
 !!! Step ""
 	

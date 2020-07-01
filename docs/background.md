@@ -90,16 +90,16 @@ Version Control is a file tracking system with the following functionality.
 			* Supply Chain Management
 			* You pick one!
 		* SVN
-			* [**S**ub**v**ersio**n** (Apache)](https://subversion.apache.org/){: .external-link } - A Centralized Version Control System
+			* [Subversion (Apache)](https://subversion.apache.org/){: .external-link } - A Centralized Version Control System
 	
 	!!! col-half ""
 		
 		![Git website intro](media/screenshots/Git-webpage-cropped.png){: style="width:100%" }
 		
 		* CVS
-			* [**C**oncurrent **V**ersions **S**ystem](http://www.nongnu.org/cvs/){: .external-link } - A Centralized Version Control System
+			* [Concurrent Versions System](http://www.nongnu.org/cvs/){: .external-link } - A Centralized Version Control System
 		* TFS
-			* [**T**eam **F**oundation **S**erver (Microsoft)](https://azure.microsoft.com/en-us/services/devops/){: .external-link } - A Centralized Version Control System
+			* [Team Foundation Server (Microsoft)](https://azure.microsoft.com/en-us/services/devops/){: .external-link } - A Centralized Version Control System
 			* Now called [Azure DevOps Server](https://docs.microsoft.com/en-us/azure/devops/server/tfs-is-now-azure-devops-server?view=azure-devops){: .external-link } with Git repositories available
 
 

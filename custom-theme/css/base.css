@@ -34,7 +34,6 @@ Body
 body {
   /* Specify several font names as a "fallback" system */
   font-family: "Open Sans", serif; /* "Segoe UI" */
-  /* background-color: rgb(245,245,245); */
   margin: 0px;
 }
 
@@ -44,7 +43,7 @@ Header
 *******************************************************************************/
 #header {
   /* Same as website */
-  background-color: rgb(245,245,245);
+  background-color: rgb(245,245,245); /* Gray 1 */
   /* As soon as you add padding to the div, the div encapsulates the whole 21.440 margin */
   padding: 10px 0px 5px;
 }
@@ -91,7 +90,7 @@ Navigation (left)
 }
 #left-navigation a:hover {
   color: White;
-  background-color: rgb(70,62,222);
+  background-color: rgba(90,80,255,0.9); /* Violet */
 }
 #left-navigation a.subsec {
   font-size: 14px;
