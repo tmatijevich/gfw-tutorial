@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Tyler Matijevich">
+    <title>Git for Windows Tutorial</title>
+    <link rel="shortcut icon" href="../media/images/favicon.ico">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <script src="../js/functions.js"></script>
+  </head>
+  <body>
+    
+    <!-- 
+    header 
+    -->
+    <div id="header">
+      <div id="header-center">
+        <img src="../media/images/InkGfwLogoForeAqua75px.png" alt="Gfw small logo" style="width:32px; margin-right:10px;" >
+        <a href="..">Git for Windows Tutorial</a>
+      </div>
+    </div>
+    
+    <!-- 
+    main body 
+    -->
+    <div id="main-body">
+      <!-- 
+      navigation
+      -->
+      <div id="left-navigation">
+<a href="..">Home</a>
+<a href="#" onclick="ToggleSubsections('cur-section')">Background</a>
+<div id="cur-section" style="display:block">
+<a class="subsec" href="#what-is-git">What is Git</a>
+<a class="subsec" href="#git-mechanisms">Git Mechanisms</a>
+</div>
+<a href="../installation/">Installation</a>
+      </div>
+      
+      <!-- 
+        main content 
+      -->
+      <div id="main-content">
+        <!-- <h1>Background</h1> -->
+<h1 id="what-is-git">What is Git?</h1>
+<h2 id="what-is-version-control">What is Version Control?</h2>
+<p>Version Control is a file tracking system with the following functionality.</p>
+<div class="admonition row">
+<div class="admonition col-half">
+<ol>
+<li>Co-Development <ul>
+<li>Multiple developers modify project files simultaneously and independently</li>
+<li>Each developer has their own instance of the project files</li>
+</ul>
+</li>
+<li>Synchronization<ul>
+<li>All modifications amongst developers are merged and any potential conflicts are resolved</li>
+</ul>
+</li>
+<li>Revision History<ul>
+<li>Modifications to project files by any developer are logged and time-stamped</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="admonition col-half">
+<p><img alt="Gfw tutorial logo" src="../media/images/InkGfwLogoBackViolet275px.png" style="margin-left:25px; width:275;" /></p>
+</div>
+</div>
+<h2 id="the-history-of-git">The History of Git</h2>
+<div class="admonition row">
+<div class="admonition col-half">
+<ul>
+<li>Began in 2005<ul>
+<li>Linus Torvalds &amp; the Linux community</li>
+</ul>
+</li>
+<li>Goals<ul>
+<li>Free and open-source</li>
+<li>Speed</li>
+<li>Simple</li>
+<li>Non-linear development</li>
+<li>Fully distributed</li>
+</ul>
+</li>
+<li>Windows<ul>
+<li>You are using "Git for Windows"</li>
+<li>Windows Vista and newer</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="admonition col-half">
+<div class="admonition row">
+<div class="admonition col-third">
+<p><img alt="Git logo" src="../media/images/Git-icon.png" style="width:100px" />
+<img alt="Linux logo" src="../media/images/Linux-icon.png" style="width:100px" />
+<img alt="Git for Windows logo" src="../media/images/Git-for-Windows-icon.png" style="width:100px" /></p>
+</div>
+<div class="admonition col-two-thirds">
+<p><a class="external-link" href="https://git-scm.com">git-scm.com</a><br />
+<a class="external-link" href="https://git-scm.com/docs">git-scm.com/docs</a><br />
+<a class="external-link" href="https://git-scm.com/book/en/v2">git-scm.com/book/en/v2</a><br />
+<a class="external-link" href="https://git-scm.com/downloads/guis">git-scm.com/downloads/guis</a>  </p>
+<p><br><br><br><br></p>
+<p><a class="external-link" href="https://gitforwindows.org/">gitforwindows.org</a><br />
+<a class="external-link" href="https://github.com/git-for-windows/git/wiki">GitHub Wiki</a><br />
+<a class="external-link" href="https://github.com/git-for-windows/git/wiki/FAQ">GitHub FAQ</a>  </p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="terminology">Terminology</h2>
+<div class="admonition row">
+<div class="admonition col-half">
+<ul>
+<li>Git<ul>
+<li>Available 3-letter word amongst Unix commands</li>
+<li>Global Information Tracker (not really)</li>
+</ul>
+</li>
+<li>VCS<ul>
+<li><b>V</b>ersion <b>C</b>ontrol <b>S</b>ystem</li>
+<li>DVCS - Distributed Version Control System</li>
+</ul>
+</li>
+<li>SCM<ul>
+<li><b>S</b>oftware <b>C</b>onfiguration <b>M</b>anagement</li>
+<li>Software Change Management</li>
+<li>Source Code Management</li>
+<li>Supply Chain Management</li>
+<li>You pick one!</li>
+</ul>
+</li>
+<li>SVN<ul>
+<li><a class="external-link" href="https://subversion.apache.org/">Subversion (Apache)</a> - A Centralized Version Control System</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="admonition col-half">
+<p><img alt="Git website intro" src="../media/screenshots/Git-webpage-cropped.png" style="width:100%" /></p>
+<ul>
+<li>CVS<ul>
+<li><a class="external-link" href="http://www.nongnu.org/cvs/">Concurrent Versions System</a> - A Centralized Version Control System</li>
+</ul>
+</li>
+<li>TFS<ul>
+<li><a class="external-link" href="https://azure.microsoft.com/en-us/services/devops/">Team Foundation Server (Microsoft)</a> - A Centralized Version Control System</li>
+<li>Now called <a class="external-link" href="https://docs.microsoft.com/en-us/azure/devops/server/tfs-is-now-azure-devops-server?view=azure-devops">Azure DevOps Server</a> with Git repositories available</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<h2 id="the-evolution-of-version-control">The Evolution of Version Control</h2>
+<table>
+<thead>
+<tr>
+<th>Generation</th>
+<th>Network</th>
+<th>Content Operations</th>
+<th>Synchronization</th>
+<th>Example Software</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>First</td>
+<td>None</td>
+<td>Single file</td>
+<td>Locks</td>
+<td>RCS, SCCS</td>
+</tr>
+<tr>
+<td>Second</td>
+<td>Centralized</td>
+<td>File trees</td>
+<td>Update before commit</td>
+<td>CVS, SVN, Visual SourceSafe, TFS</td>
+</tr>
+<tr>
+<td>Third</td>
+<td>Distributed</td>
+<td>Changesets</td>
+<td>Commit before merge</td>
+<td>Git, Mercurial, BitKeeper, Bazaar</td>
+</tr>
+</tbody>
+</table>
+<p><em>See Eric Sink's</em> <a class="external-link" href="https://ericsink.com/vcbe/html/history_of_version_control.html"><em>History of Version Control</em></a>.</p>
+<h2 id="version-control-repository-definitions">Version Control Repository Definitions</h2>
+<ul>
+<li>File System<ul>
+<li>Files, directories, size, type, date</li>
+</ul>
+</li>
+<li>Repository<ul>
+<li>Snapshots of a file system over time</li>
+</ul>
+</li>
+<li>File tree<ul>
+<li>Store complete files from each snapshot</li>
+</ul>
+</li>
+</ul>
+<p><img alt="File tree diagram" src="../media/diagrams/File-Tree-example_2020-02-22_17-49-38.png" style="margin-left:25px; width:100%" /></p>
+<ul>
+<li>Changeset<ul>
+<li>Store files changes between each snapshot</li>
+</ul>
+</li>
+</ul>
+<p><img alt="Changeset diagram" src="../media/diagrams/Changeset-example_2020-02-22_17-50-47.png" style="margin-left:25px; width:100%" /></p>
+<h1 id="git-mechanisms">Git Mechanisms</h1>
+<h2 id="distributed-vs-centralized-git-vs-svn">Distributed vs. Centralized (Git vs. SVN)</h2>
+<div class="admonition row">
+<div class="admonition col-half">
+<h3 id="git-dvcs">Git - DVCS</h3>
+<ul>
+<li>Fully distributed, parallel programming</li>
+<li>Local repository for offline development</li>
+<li>Good large project performance</li>
+</ul>
+<p><img alt="DVCS diagram" src="../media/diagrams/DVCS-diagram_2020-02-22_17-51-30.png" style="width:95%" /></p>
+</div>
+<div class="admonition col-half">
+<h3 id="svn-centralized-vcs">SVN - Centralized VCS</h3>
+<ul>
+<li>Straightforward commands</li>
+<li>Rigid history</li>
+<li>Good large file performance</li>
+</ul>
+<p><img alt="CVCS diagram" src="../media/diagrams/CVCS-diagram_2020-02-22_17-52-24.png" style="width:95%" /></p>
+</div>
+</div>
+<p><em>See Michael Ernst's</em> <a class="external-link" href="https://homes.cs.washington.edu/~mernst/advice/version-control.html#Distributed_and_centralized_version_control"><em>Version Control Concepts and Best Practices</em></a></p>
+<h2 id="mechanism-definitions">Mechanism Definitions</h2>
+<p>There are five mechanisms that complete the full functionality of Git's version control</p>
+<ul>
+<li>Three mechanisms (<strong>Workspace</strong>, <strong>Local</strong>, and <strong>Remote</strong>) are required for fundamental Git commands</li>
+<li>The remaining two mechanisms (<strong>Stash</strong> and <strong>Index</strong>) prove useful in many scenarios, though can be dismissed when performing basic commands</li>
+</ul>
+<p><img alt="Mechanism definition diagram" src="../media/diagrams/git-mechanisms_2020-02-22_17-57-16.png" style="width:100%" /></p>
+<h2 id="basic-commands">Basic Commands</h2>
+<p>Here's a look at some fundamental Git commands across the five Git mechanisms.</p>
+<p><img alt="Visual git command diagram" src="../media/diagrams/basic-commands-across-mechanisms_2020-02-22_17-58-17.png" style="width:100%" /></p>
+<p><em>See Andrew Peterson's</em> <a class="external-link" href="https://ndpsoftware.com/git-cheatsheet.html"><em>Visual Git Cheatsheet</em></a></p>
+      </div>
+    </div> 
+    
+    
+    <!-- 
+    footer 
+    -->
+    <div id="footer">
+      <div class="row" style="max-width:1100px; margin-left:auto; margin-right:auto;">
+        <div class="col-third" style="margin-top:16px; margin-bottom:13px;">
+          <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+        </div>
+        <div class="col-third">
+          <p style="font-style:italic; text-align:center;"> Last updated: Feb 18 2020 by Tyler Matijevich</p>
+        </div>
+        <div class="col-third">
+          <a id="close-footer" href="#" onclick="HideFooter()">
+            <img src="../media/icons/clear-black-18dp.svg" alt="Close">
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>

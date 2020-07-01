@@ -1,0 +1,53 @@
+/* Custom layout styling */
+
+/*******************************************************************************
+Content | Custom column sections
+*******************************************************************************/
+.row {
+  /* This helps out a lot */
+  display: flex;
+}
+.row::after {
+  /* This creates some space after a row, but does not force the after to clear */
+  content: "";
+  /* This is also trying to clear the navigavtion */
+  /* clear: both; */
+  display: block;
+}
+.col-half {
+  /* background-color: rgb(240,240,240); */
+  /* Include padding and border in size calc of object */
+  /* box-sizing: border-box;
+  border: 1px solid Black; */
+  float: left;
+  width: 50%;
+}
+.col-third {
+  float: left;
+  width: 33.3%;
+}
+.col-two-third {
+  float: left;
+  width: 66.7%;
+}
+
+
+/*******************************************************************************
+Content | Collapsible Section
+*******************************************************************************/
+h4.collapsible {
+  font-weight: normal;
+  background-color: rgb(245,245,245); /* Gray 1 */
+  cursor: pointer;
+  user-select: none;
+  padding: 5px;
+  border: 1px solid rgb(230,230,230); /* Gray 2 */
+  border-radius: 3px;
+  margin: 10px 0px 10px 20px;
+}
+figcaption {
+  font-size: 14px;
+}
+.step {
+  margin-left: 20px;
+}

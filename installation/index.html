@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Tyler Matijevich">
+    <title>Git for Windows Tutorial</title>
+    <link rel="shortcut icon" href="../media/images/favicon.ico">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <script src="../js/functions.js"></script>
+  </head>
+  <body>
+    
+    <!-- 
+    header 
+    -->
+    <div id="header">
+      <div id="header-center">
+        <img src="../media/images/InkGfwLogoForeAqua75px.png" alt="Gfw small logo" style="width:32px; margin-right:10px;" >
+        <a href="..">Git for Windows Tutorial</a>
+      </div>
+    </div>
+    
+    <!-- 
+    main body 
+    -->
+    <div id="main-body">
+      <!-- 
+      navigation
+      -->
+      <div id="left-navigation">
+<a href="..">Home</a>
+<a href="../background/">Background</a>
+<a href="#" onclick="ToggleSubsections('cur-section')">Installation</a>
+<div id="cur-section" style="display:block">
+<a class="subsec" href="#overview">Overview</a>
+<a class="subsec" href="#install-notepad">Install Notepad++</a>
+<a class="subsec" href="#install-putty">Install PuTTY</a>
+<a class="subsec" href="#install-git">Install Git</a>
+<a class="subsec" href="#install-tortoisegit">Install TortoiseGit</a>
+</div>
+      </div>
+      
+      <!-- 
+        main content 
+      -->
+      <div id="main-content">
+        <!-- <h1>Installation</h1> -->
+<h1 id="overview">Overview</h1>
+<p>This section provides installation details on the recommended software to start using Git for Windows.</p>
+<p>As the <strong>bare minimum</strong>, you will need Git. An installer is available on Git's official website.</p>
+<ul>
+<li><a class="external-link" href="https://git-scm.com/downloads">git-scm.com/downloads</a><ul>
+<li>The web page should automatically recognize you are using Windows, so simply click the link <em>Download <version> for Windows</em> to get the latest stable version.</li>
+</ul>
+</li>
+<li>The Git for Windows installation provides:<ul>
+<li>Use of the <code class="code-snippet">git</code> command from the Windows Command Prompt</li>
+<li>Git-Bash - A shell terminal on Windows</li>
+<li>Git-GUI - A simple GUI for repositories</li>
+<li>OpenSSH - Secure Shell Protocol utility</li>
+<li>OpenSSL - Library for secure communications with HTTPS websites</li>
+</ul>
+</li>
+</ul>
+<p><em>More details on the actual installation to follow.</em></p>
+<p>It is <strong>recommended</strong> to additionally download the follow <strong>free</strong> software to use with Git for Windows.</p>
+<ul>
+<li>A text editor<ul>
+<li><a class="external-link" href="https://notepad-plus-plus.org/">Notepad++</a></li>
+<li><a class="external-link" href="https://atom.io/">Atom</a> - Also has a Git client integration</li>
+<li><a class="external-link" href="https://www.sublimetext.com/">Sublime Text</a></li>
+<li><a class="external-link" href="https://code.visualstudio.com/">Microsoft VSCode</a></li>
+</ul>
+</li>
+<li>A SSH Client<ul>
+<li><a class="external-link" href="https://putty.org/">PuTTY</a> - A user friendly SSH client for Windows</li>
+</ul>
+</li>
+<li>A Git GUI client<ul>
+<li><a class="external-link" href="https://tortoisegit.org/download/">TortoiseGit</a></li>
+<li><a class="external-link" href="https://www.sourcetreeapp.com/">Sourcetree</a></li>
+<li><a class="external-link" href="https://desktop.github.com/">GitHub Desktop</a></li>
+<li><a class="external-link" href="https://www.sublimemerge.com/">Sublime Merge</a></li>
+<li><a class="external-link" href="https://www.gitkraken.com/">GitKraken</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="install-notepad">Install Notepad++</h1>
+<p><img alt="npp logo" src="../media/screenshots/download%20latest%20notepad%2B%2B%202020-03-10_11-16-51.png" style="width:222px; float:right;" /></p>
+<p>Notepad++ is a fast and lightweight text editor for Windows, useful for editing source code and configuration files. It is free to download from the official website <a class="external-link" href="https://notepad-plus-plus.org/">https://notepad-plus-plus.org/</a>. Find the latest version (32 or 64 bit) and download the installer.</p>
+<p>Installing Notepad++ before Git will allow you to reference the existing Notepad++ installation during the Git installation.</p>
+<p>Run the installer and accept User Account Control.</p>
+<p><br></p>
+<h4 class="collapsible" id="0-language">0. Language</h4>
+<p><img alt="npp 0" src="../media/install/npp/0%20language%202020-02-12_8-27-59.png" style="width:288px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+<h4 class="collapsible" id="1-welcome">1. Welcome</h4>
+<p><img alt="npp 1" src="../media/install/npp/1%20welcome%202020-02-12_8-28-09.png" style="width:497px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+<h4 class="collapsible" id="2-license-agreement">2. License Agreement</h4>
+<p><img alt="npp 2" src="../media/install/npp/2%20license%202020-02-12_8-28-12.png" style="width:497px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+<h4 class="collapsible" id="3-install-location">3. Install Location</h4>
+<p><img alt="npp 3" src="../media/install/npp/3%20destination%202020-02-12_8-28-15.png" style="width:497px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+<h4 class="collapsible" data-show="1" id="4-components">4. Components</h4>
+<div class="admonition step">
+<p><img alt="npp 4" src="../media/install/npp/4%20components%20scroll%202020-03-10_11-34-42.png" style="width:497px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+<ul>
+<li>The default component selections are sufficient</li>
+<li>Make sure <em>Context Menu Entry</em> is selected (default)<ul>
+<li>This helps for quick edits of text files</li>
+</ul>
+</li>
+</ul>
+</div>
+<h4 class="collapsible" id="5-options">5. Options</h4>
+<p><img alt="npp 5" src="../media/install/npp/5%20desktop%20shortcut%202020-02-12_8-29-07.png" style="width:497px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+<h4 class="collapsible" id="6-finish">6. Finish</h4>
+<p><img alt="npp 6" src="../media/install/npp/6%20completing%202020-02-12_8-29-33.png" style="width:497px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+<h1 id="install-putty">Install PuTTY</h1>
+<p><a class="external-link" href="https://putty.org/">PuTTY</a> is a client program for the SSH (Secure Shell) protocol. It will be used to communicate file changes to repositories on a server. It is free, open source, and available to download for Windows and Unix systems at the <a class="external-link" href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">author's website</a> or <a class="external-link" href="https://www.ssh.com/ssh/putty/download">ssh.com</a>.</p>
+<p>The PuTTY installation will be referenced during the Git installation process.</p>
+<p>Download the 32 or 64 bit installer, then run the installer with the default options.</p>
+<h4 class="collapsible" id="1-welcome_1">1. Welcome</h4>
+<p><img alt="putty 1" src="../media/install/putty/1%20setup%202020-02-10_16-07-36.png" style="width:492px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+<h4 class="collapsible" id="2-destination-folder">2. Destination Folder</h4>
+<p><img alt="putty 2" src="../media/install/putty/2%20destination%202020-02-10_16-07-42.png" style="width:492px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+<h4 class="collapsible" data-show="1" id="3-feature-options">3. Feature Options</h4>
+<div class="admonition step">
+<p><img alt="putty 3" src="../media/install/putty/3%20options%202020-02-10_16-08-15.png" style="width:492px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+<ul>
+<li>Keep <em>Put install directory on the PATH ...</em> selected (default)<ul>
+<li>This will add <code class="code-snippet">C:\Program Files\PuTTY</code> to your Windows PATH allowing other programs to find it</li>
+<li>Use this command to view all current directories in your PATH with cmd (Credit Groosha at <a class="external-link" href="https://stackoverflow.com/a/15885269/11402416">Stack Overflow</a>)</li>
+</ul>
+</li>
+</ul>
+<p class="code-block" style="margin-left:80px">> echo %path:;=&amp;echo.%</p>
+</div>
+<h4 class="collapsible" id="4-complete">4. Complete</h4>
+<p><img alt="putty 4" src="../media/install/putty/4%20complete%202020-02-10_16-08-23.png" style="width:492px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+<h1 id="install-git">Install Git</h1>
+<p>With Notepad++ and PuTTY installed, it is now a good time to install Git. If installed out of order, that is fine, you can still make changes to Git's configuration after installation.</p>
+<h3 id="installation-options">Installation Options</h3>
+<p>The default Git installation options will work fine on Windows, but there are a few recommended alternative options that align with the remaining material in the tutorial. These alternative options can also be implemented after installation.</p>
+<h3 id="already-installed">Already Installed?</h3>
+<p>If you already have Git installed, you can still run the latest installer. This will effectively update your current installation of Git. The installation options will populate based on your current Git configuration and you can modify them during the <em>update</em> installation.</p>
+<h3 id="download-and-install">Download and Install</h3>
+<p>Download the 32 or 64 bit version of Git from the official website <a class="external-link" href="https://git-scm.com/download/win">git-scm.com</a> and run the installer.</p>
+<p>Steps marked <em style="color:rgba(90,80,255,0.9);">Configurable</em> can be configured post-installation.</p>
+<h4 class="collapsible" id="1-information">1. Information</h4>
+<div class="admonition step">
+<p><img alt="git 1" src="../media/install/git/1%20info%202020-02-10_16-13-37.png" style="width:463px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+</div>
+<h4 class="collapsible" id="2-destination-location">2. Destination Location</h4>
+<div class="admonition step">
+<p><img alt="git 2" src="../media/install/git/2%20destination%202020-02-10_16-13-43.png" style="width:463px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+</div>
+<h4 class="collapsible" data-show="1" id="3-select-components">3. Select Components</h4>
+<div class="admonition step">
+<p><img alt="git 3" src="../media/install/git/3%20components%202020-02-10_16-13-50.png" style="width:463px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+<ul>
+<li>The default component selections (shown) are sufficient</li>
+<li>It is recommended to keep the <strong>Git Bash Here</strong> Windows Explorer integration checked for quick access to bash commands</li>
+</ul>
+</div>
+<h4 class="collapsible" id="4-start-menu">4. Start Menu</h4>
+<div class="admonition step">
+<p><img alt="git 4" src="../media/install/git/4%20start%20menu%202020-02-10_16-14-00.png" style="width:463px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+</div>
+<h4 class="collapsible" id="5-text-editor-configurable">5. Text Editor <em style="color:rgba(90,80,255,0.9);">Configurable</em></h4>
+<div class="admonition step">
+<p><img alt="git 5" src="../media/install/git/default%20editor%202019-11-11_10-52-51.png" style="width:463px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+<ul>
+<li>The default selection is Vim only for historical reasons</li>
+<li>It is recommended to use the already installed and user-friendly <strong>Notepad++</strong> text editor</li>
+<li>This default editor is launched when running <code class="code-snippet">git commit</code> without a message argument, prompting for a message</li>
+</ul>
+</div>
+<h4 class="collapsible" id="6-path-environment">6. PATH Environment</h4>
+<div class="admonition step">
+<p><img alt="git 6" src="../media/install/git/6%20path%202020-02-10_16-14-24.png" style="width:463px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+<ul>
+<li>The default recommended selection is the best option</li>
+<li>This option only adds the necessary entries to PATH allowing Git commands from:<ul>
+<li>Windows Command Prompt (cmd)</li>
+<li>Windows Powershell</li>
+<li>Git Bash</li>
+</ul>
+</li>
+<li>Unix commands will only be available from Git Bash with this option</li>
+</ul>
+</div>
+<h4 class="collapsible" data-show="1" id="7-ssh-agent-configurable">7. SSH Agent <em style="color:rgba(90,80,255,0.9);">Configurable</em></h4>
+<div class="admonition step">
+<p><img alt="git 7" src="../media/install/git/7%20ssh%20setup%202020-02-10_16-15-36.png" style="width:463px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+<ul>
+<li>Git ships with OpenSSH (default) as the Secure Shell (SSH) protocol client.<ul>
+<li>However, all of OpenSSH's tools are command line execution only. This can be difficult for new users.</li>
+</ul>
+</li>
+<li><a href="#install-putty">PuTTY</a> has a suite of user-friendly graphical interface applications to perform SSH client operations.</li>
+<li>This step of the installation is looking for the executable of a remote connection tool.<ul>
+<li>Plink (PuTTY Link) can be found from any of the following installations:<ul>
+<li><code class="code-snippet">C:\Program Files\PuTTY\Plink.exe</code> - Already installed <a href="#install-putty">above</a></li>
+<li><code class="code-snippet">C:\Program Files\TortoiseGit\bin\TortoiseGitPlink.exe</code></li>
+<li><code class="code-snippet">C:\Program Files\TortoiseSVN\bin\TortoisePlink.exe</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h4 class="collapsible" id="8-ssl-backend-configurable">8. SSL Backend <em style="color:rgba(90,80,255,0.9);">Configurable</em></h4>
+<div class="admonition step">
+<p><img alt="git 8" src="../media/install/git/8%20ssl%202020-02-10_16-15-40.png" style="width:463px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+<ul>
+<li>The default selection is suitable for most cases, <em>especially when using SSH to connect with remote servers instead of HTTPS</em>.</li>
+</ul>
+</div>
+<h4 class="collapsible" id="9-file-checkout-configurable">9. File Checkout <em style="color:rgba(90,80,255,0.9);">Configurable</em></h4>
+<div class="admonition step">
+<p><img alt="git 9" src="../media/install/git/9%20checkout%202020-02-10_16-15-48.png" style="width:463px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+<ul>
+<li>On checkout, Git will convert unix-style line endings (line feed LF) to windows-style line endings (carriage return CR line feed LF) for text-based files.</li>
+<li>During a commit, the inverse is performed.</li>
+<li>This is the recommended option for Windows compatibility.</li>
+</ul>
+</div>
+<h4 class="collapsible" id="10-terminal">10. Terminal</h4>
+<div class="admonition step">
+<p><img alt="git 10" src="../media/install/git/10%20terminal%202020-02-10_16-15-53.png" style="width:463px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+<ul>
+<li>To avoid complications (ASC-II, scroll-back) with the Windows Command Prompt, it is recommended to use MinTTY (default) as the terminal emulator for Git Bash.</li>
+</ul>
+</div>
+<h4 class="collapsible" data-show="1" id="11-extra-options-configurable">11. Extra Options <em style="color:rgba(90,80,255,0.9);">Configurable</em></h4>
+<div class="admonition step">
+<p><img alt="git 11" src="../media/install/git/11%20extra%20options%202020-02-10_16-15-58.png" style="width:463px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+<ul>
+<li>Each option can be enabled or disabled post-installation.</li>
+<li>The Git Credential Manager (stores HTTPS connection usernames and passwords) is unnecessary when utilizing SSH for remote connections.</li>
+</ul>
+</div>
+<h4 class="collapsible" id="12-complete">12. Complete</h4>
+<div class="admonition step">
+<p><img alt="git 12" src="../media/install/git/12%20installing%202020-02-10_16-16-07.png" style="width:463px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+<p><img alt="git 12b" src="../media/install/git/12%20complete%202020-02-10_16-16-52.png" style="width:463px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+<p>Git has now successfully been installed on your computer.</p>
+</div>
+<h1 id="install-tortoisegit">Install TortoiseGit</h1>
+<p>TortoiseGit is a free and open source Windows software to interface with Git.</p>
+<p>Specifically, TortoiseGit is a lightweight Windows Shell Interface to Git making it very easy to use with all commands directly available from the Windows Explorer.
+It is based on the TortoiseSVN interface for <a class="external-link" href="https://subversion.apache.org/">Apache's Subversion</a> version control system.</p>
+<p>Additionally, TortoiseGit provides helpful tools for file comparison and merging.
+It works independently of all IDE (Integrated Development Environment) applications</p>
+<p>TortoiseGit is available for download on its <a class="external-link" href="https://tortoisegit.org/download/">official website</a>
+Download and run the latest stable installer for your 32 or 64 bit system.</p>
+<h4 class="collapsible" id="1-welcome_2">1. Welcome</h4>
+<div class="admonition step">
+<p><img alt="tg 1" src="../media/install/tg/1%20welcome%202020-02-10_16-25-10.png" style="width:492px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+</div>
+<h4 class="collapsible" id="2-information">2. Information</h4>
+<div class="admonition step">
+<p><img alt="tg 2" src="../media/install/tg/2%20info%202020-02-10_16-25-16.png" style="width:492px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+</div>
+<h4 class="collapsible" data-show="1" id="3-ssh-client">3. SSH Client</h4>
+<div class="admonition step">
+<p><img alt="tg 3" src="../media/install/tg/3%20ssh%202020-02-10_16-25-27.png" style="width:492px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+<ul>
+<li>TortoiseGitPlink is TortoiseGit's adoption of <a class="external-link" href="#install-putty">PuTTY</a>'s Plink.</li>
+<li>You may use <code class="code-snippet">TortoiseGitPlink.exe</code> or <code class="code-snippet">Plink.exe</code> for Git operations. However, PuTTY provides additional tools for SSH connections which prove useful for many scenarios.</li>
+</ul>
+</div>
+<h4 class="collapsible" id="4-custom-setup">4. Custom Setup</h4>
+<div class="admonition step">
+<p><img alt="tg 4" src="../media/install/tg/4%20components%202020-02-10_16-25-31.png" style="width:492px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+<p>All subfeatures are selected by default and take up little space.</p>
+</div>
+<h4 class="collapsible" id="5-ready-to-install">5. Ready to Install</h4>
+<div class="admonition step">
+<p><img alt="tg 5" src="../media/install/tg/5%20ready%202020-02-10_16-25-35.png" style="width:492px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+</div>
+<h4 class="collapsible" id="6-complete">6. Complete</h4>
+<div class="admonition step">
+<p><img alt="tg 6" src="../media/install/tg/6%20complete%202020-02-10_16-26-27.png" style="width:492px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+</div>
+<p>Once installed, TortoiseGit prompts the user to run the First Start Wizard. This is highly recommended to complete the setup of TortoiseGit before usage.</p>
+<p>Steps marked <em style="color:rgba(90,80,255,0.9);">Configurable</em> can be configured post-installation.</p>
+<h4 class="collapsible" id="1-language">1. Language</h4>
+<div class="admonition step">
+<p><img alt="tgf 1" src="../media/install/tg/f1%20language%202020-02-10_16-26-32.png" style="width:470px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+</div>
+<h4 class="collapsible" id="2-details">2. Details</h4>
+<div class="admonition step">
+<p><img alt="tgf 2" src="../media/install/tg/f2%20welcome%202020-02-10_16-26-34.png" style="width:470px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+</div>
+<h4 class="collapsible" id="3-git-path">3. Git Path</h4>
+<div class="admonition step">
+<p><img alt="tgf 3" src="../media/install/tg/f3%20git%20path%202020-02-10_16-26-41.png" style="width:470px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+</div>
+<h4 class="collapsible" data-show="1" id="4-user-configuration-configurable">4. User Configuration <em style="color:rgba(90,80,255,0.9);">Configurable</em></h4>
+<div class="admonition step">
+<p><img alt="tgf 4" src="../media/install/tg/f4%20user%20config%202020-02-10_16-26-47.png" style="width:470px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+<p>Git's user configuration will be setup in the next page so the reader can see how to set, modify, and unset the user name and email in the Git configuration.</p>
+</div>
+<h4 class="collapsible" data-show="1" id="5-authentication-and-credential-store-configurable">5. Authentication and Credential Store <em style="color:rgba(90,80,255,0.9);">Configurable</em></h4>
+<div class="admonition step">
+<p><img alt="tgf 5" src="../media/install/tg/f5%20config%20options%202020-02-10_16-26-55.png" style="width:492px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" /></p>
+<ul>
+<li>Similar to the Git installation, the credential store is unnecessary since it is recommended to use SSH for all remote connections.</li>
+<li>Selecting a credential helper will not interfere with any SSH setup.</li>
+<li>The credential helper configuration can be change at any time.</li>
+</ul>
+</div>
+      </div>
+    </div> 
+    
+    
+    <!-- 
+    footer 
+    -->
+    <div id="footer">
+      <div class="row" style="max-width:1100px; margin-left:auto; margin-right:auto;">
+        <div class="col-third" style="margin-top:16px; margin-bottom:13px;">
+          <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+        </div>
+        <div class="col-third">
+          <p style="font-style:italic; text-align:center;"> Last updated: Feb 18 2020 by Tyler Matijevich</p>
+        </div>
+        <div class="col-third">
+          <a id="close-footer" href="#" onclick="HideFooter()">
+            <img src="../media/icons/clear-black-18dp.svg" alt="Close">
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
