@@ -182,12 +182,17 @@ Steps marked *Configurable*{: style="color:rgba(90,80,255,0.9);" } can be config
 	
 	![git 6](media/install/git/6 path 2020-02-10_16-14-24.png){: style="width:463px; display:block; margin-left:auto; margin-right:auto; border:1px solid gray;" }
 	
-	- The default recommended selection is the best option
-	- This option only adds the necessary entries to PATH allowing Git commands from:
-		- Windows Command Prompt (cmd)
-		- Windows Powershell
-		- Git Bash
-	- Unix commands will only be available from Git Bash with this option
+	- The recommended selection (2nd, default) is the best option
+		- This option only adds the necessary entries to PATH allowing Git commands from:
+			- Windows Command Prompt (cmd)
+			- Windows Powershell
+			- Git Bash
+		- Unix commands will only be available from Git Bash with this option
+		- Adds `C:\Program Files\Git\cmd\`{: .code-snippet } to the system PATH environment
+	- The third options adds the following to the system PATH environment ([ojchase from Stack Exchange](https://superuser.com/a/1427480/1093302){: .external-link })
+		- `C:\Program Files\Git\cmd\`{: .code-snippet }
+		- `C:\Program Files\Git\mingw64\bin\`{: .code-snippet }
+		- `C:\Program Files\Git\usr\bin\`{: .code-snippet }
 	
 #### 7. SSH Agent *Configurable*{: style="color:rgba(90,80,255,0.9);" } {: .collapsible data-show="1" }
 

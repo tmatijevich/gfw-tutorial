@@ -6,6 +6,7 @@ nav:
   - 'index.md'
   - 'background.md'
   - 'installation.md'
+  - 'setup.md'
 extra_css:
   - 'css/main.css'
   - 'css/layout.css'

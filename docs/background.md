@@ -81,10 +81,10 @@ Version Control is a file tracking system with the following functionality.
 			* Available 3-letter word amongst Unix commands
 			* Global Information Tracker (not really)
 		* VCS
-			* <b>V</b>ersion <b>C</b>ontrol <b>S</b>ystem
+			* Version Control System
 			* DVCS - Distributed Version Control System
 		* SCM
-			* <b>S</b>oftware <b>C</b>onfiguration <b>M</b>anagement
+			* Software Configuration Management
 			* Software Change Management
 			* Source Code Management
 			* Supply Chain Management
